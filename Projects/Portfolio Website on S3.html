@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS Portfolio Website | JonosTechLab</title>
+  <meta
+    name="description"
+    content="Build log and walkthrough for my AWS portfolio website project."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="../index.html" class="brand">JonosTechLab</a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav">
+      
+        <a href="/About.html">About</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/#contact">Say Hi</a>
+        <a href="#" class="resume-link">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section project-detail-shell">
+      <div class="container">
+
+        <article class="blog-project-frame">
+          <div class="blog-project-toolbar">
+            <div class="blog-project-toolbar-inner">
+              <span class="toolbar-chip">AWS</span>
+              <span class="toolbar-chip">CloudFront</span>
+              <span class="toolbar-chip">S3</span>
+              <span class="toolbar-chip">ACM</span>
+            </div>
+          </div>
+
+          <div class="blog-project-header">
+            <p class="section-label">Build Log</p>
+            <h1 class="blog-project-title">Portfolio Website on S3 + CloudFront + ACM</h1>
+            <p class="blog-project-subtitle">
+              AWS static hosting, TLS, CDN flow, DNS integration, and a more security-conscious
+              delivery model for a public portfolio site.
+            </p>
+          </div>
+
+          <div class="blog-project-main">
+            <section class="blog-project-video-card">
+              <h2 class="panel-title">Walkthrough video</h2>
+
+              <!--<video controls class="project-video">
+                <source src="https://youtu.be/p0ANQ5MlDXc" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>-->
+
+              <!-- If using YouTube instead: -->
+              <div class="video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/pgS2Ssqiagw"
+                  title="AWS Portfolio Website Walkthrough"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              
+            </section>
+
+            <aside class="blog-project-text-card">
+              <h2 class="panel-title">Overview</h2>
+
+              <p>
+                This project documents the creation of my portfolio website using AWS S3,
+                CloudFront, ACM, and Cloudflare DNS. The goal was to build something public-facing
+                while also understanding the infrastructure behind secure static delivery.
+              </p>
+
+              <p>
+                Instead of treating the bucket as the directly exposed website, I wanted a cleaner
+                layered flow where CloudFront handled delivery, caching, and TLS termination in
+                front of the origin.
+              </p>
+
+              <div class="project-detail-meta">
+                <div class="meta-block">
+                  <span class="meta-label">Role</span>
+                  <span class="meta-value">Design, setup, troubleshooting</span>
+                </div>
+
+                <div class="meta-block">
+                  <span class="meta-label">Type</span>
+                  <span class="meta-value">Cloud / web delivery project</span>
+                </div>
+
+                <div class="meta-block">
+                  <span class="meta-label">Focus</span>
+                  <span class="meta-value">Architecture, DNS, TLS, CDN flow</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+
+          <div class="blog-project-lower">
+            <section class="project-lower-panel">
+              <h2 class="panel-title">Key implementation points</h2>
+              <ul class="project-detail-list">
+                <li>Hosted static content in S3</li>
+                <li>Used CloudFront for distribution and caching</li>
+                <li>Configured TLS through AWS Certificate Manager</li>
+                <li>Integrated external DNS through Cloudflare</li>
+                <li>Learned the practical flow of origin to edge delivery</li>
+              </ul>
+            </section>
+
+            <section class="project-lower-panel">
+              <h2 class="panel-title">Lessons learned</h2>
+              <p>
+                This build taught me a lot about how web delivery works in practice, especially the
+                difference between basic static hosting and a more production-minded CDN-backed setup.
+                It also helped me understand ACM validation behaviour, default root object quirks,
+                and why CloudFront often becomes the preferred public entry point.
+              </p>
+            </section>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 JonosTechLab</p>
+      <a href="../projects.html">Back to projects</a>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

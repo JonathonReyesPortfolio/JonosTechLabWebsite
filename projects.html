@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | JonosTechLab</title>
+  <meta
+    name="description"
+    content="Project index for JonosTechLab featuring infrastructure, security, and cloud build logs."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">JonosTechLab</a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav">
+        
+        <a href="About.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="#contact">Say Hi</a>
+        <a href="#" class="resume-link">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section project-index-hero">
+      <div class="container">
+        <p class="section-label">Selected work</p>
+        <h1 class="page-title">Projects and build logs</h1>
+        <p class="page-intro">
+          A collection of technical projects across AWS, security, homelab infrastructure, and documentation.
+          Each entry below is a summary card that links to the full project page.
+        </p>
+      </div>
+    </section>
+
+    <section class="section project-index-section">
+      <div class="container">
+        <div class="project-list">
+
+          <a class="project-card-link" href="Projects/Portfolio%20Website%20on%20S3.html">
+            <article class="project-card project-summary-card">
+              <div class="project-meta">AWS • Static Hosting</div>
+              <h3>Portfolio Website on S3 + CloudFront + ACM</h3>
+              <p>
+                A static portfolio site delivered through CloudFront with TLS, DNS integration,
+                and a private-origin mindset.
+              </p>
+              <span class="project-read-more">View full project</span>
+            </article>
+          </a>
+
+          <a class="project-card-link" href="Projects/WazuhSiemLab.html">
+  <article class="project-card project-summary-card">
+    <div class="project-meta">Security • Wazuh • Detection Engineering</div>
+    <h3>Wazuh SIEM Lab with Custom Detection Rules</h3>
+    <p>
+      A self-hosted SIEM project focused on monitoring SSH access, sudo activity,
+      and account-management events through layered custom rules and practical log analysis.
+    </p>
+    <span class="project-read-more">View full project</span>
+  </article>
+            </a>
+          
+          <a class="project-card-link" href="Projects/homelab-project.html">
+  <article class="project-card project-summary-card">
+    <div class="project-meta">Infrastructure • Networking • Homelab</div>
+    <h3>Homelab Infrastructure Overview</h3>
+    <p>
+      A full-stack homelab project covering physical setup, VLAN-based network design,
+      Docker services, reverse proxying, and internal DNS — focused on how all layers
+      connect to form a cohesive, real-world system.
+    </p>
+    <span class="project-read-more">View full project</span>
+  </article>
+          </a>
+          <!--
+          <a class="project-card-link" href="projects/homelab-services.html">
+            <article class="project-card project-summary-card">
+              <div class="project-meta">Homelab • Infrastructure</div>
+              <h3>Self-Hosted Lab Services</h3>
+              <p>
+                Internal services, Docker networking, reverse proxying, and secure access
+                patterns for personal infrastructure.
+              </p>
+              <span class="project-read-more">View full project</span>
+            </article>
+          </a>
+
+          <a class="project-card-link" href="projects/soc-journey.html">
+            <article class="project-card project-summary-card">
+              <div class="project-meta">Security • Documentation</div>
+              <h3>SOC / Security Learning Journey</h3>
+              <p>
+                Detection practice, notes, walkthroughs, and structured write-ups showing
+                technical growth over time.
+              </p>
+              <span class="project-read-more">View full project</span>
+            </article>
+          </a>
+          -->
+  
+        </div>
+      </div>
+ <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">Say Hi</p>
+          <h2>Let’s connect</h2>
+          <p>
+            Whether it’s cloud, infrastructure, security, or just seeing what I’m building — feel
+            free to reach out.
+          </p>
+
+          <div class="contact-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="mailto:you@example.com">Email</a>
+          </div>
+        </div>
+
+              <form 
+  class="contact-form" 
+  id="contactForm"
+  action="https://formspree.io/f/mgonqvoz"
+  method="POST"
+>
+          <label>
+            First Name
+            <input type="text" name="firstName" placeholder="Jonathon" required />
+          </label>
+
+          <label>
+            Last Name
+            <input type="text" name="lastName" placeholder="Surname" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 JonosTechLab</p>
+      <a href="index.html">Back home</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

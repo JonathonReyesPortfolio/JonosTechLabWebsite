@@ -1,0 +1,17 @@
+site/
+│
+├── index.html
+├── projects.html
+├── style.css
+├── script.js
+│
+├── projects/
+│   ├── aws-portfolio.html
+│   ├── homelab-services.html
+│   └── soc-journey.html
+│
+└── assets/
+    ├── videos/
+    └── images/
+
+

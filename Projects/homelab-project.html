@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS Portfolio Website | JonosTechLab</title>
+  <meta
+    name="description"
+    content="Build log and walkthrough for my AWS portfolio website project."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="../index.html" class="brand">JonosTechLab</a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav">
+      
+        <a href="/About.html">About</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/#contact">Say Hi</a>
+        <a href="#" class="resume-link">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <section class="section project-detail-shell">
+    <div class="container">
+
+      <article class="blog-project-frame">
+        <div class="blog-project-toolbar">
+          <div class="blog-project-toolbar-inner">
+            <span class="toolbar-chip">Homelab</span>
+            <span class="toolbar-chip">Networking</span>
+            <span class="toolbar-chip">Docker</span>
+            <span class="toolbar-chip">Infrastructure</span>
+          </div>
+        </div>
+
+        <div class="blog-project-header">
+          <p class="section-label">Build Log</p>
+          <h1 class="blog-project-title">Homelab Infrastructure Overview — From Physical Layer to Services</h1>
+          <p class="blog-project-subtitle">
+            A holistic walkthrough of a self-hosted homelab environment, focusing on network design,
+            service architecture, and practical infrastructure decisions.
+          </p>
+        </div>
+
+        <div class="blog-project-main">
+          <section class="blog-project-video-card">
+            <h2 class="panel-title">Walkthrough video</h2>
+
+            <div class="video-embed">
+              <iframe
+                src="https://www.youtube.com/embed/Jx4Dq2_vK_U?si=N8ptvos425M0lq9I"
+                title="Homelab Infrastructure Overview"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+
+          <aside class="blog-project-text-card">
+            <h2 class="panel-title">Overview</h2>
+
+            <p>
+              This project documents a full walkthrough of my homelab environment, presented from a
+              systems-level perspective rather than just a collection of tools.
+            </p>
+
+            <p>
+              The goal was to break down not only what is running, but why each component exists and
+              how they integrate into a cohesive system. The lab is designed to mirror small business
+              infrastructure using accessible, second-hand hardware and practical design choices.
+            </p>
+
+            <p>
+              The video covers the full stack of the environment, from physical hardware and layout,
+              through to network architecture and VLAN segmentation, and into the service layer with
+              Docker applications, reverse proxying with Nginx, and internal DNS with AdGuard. A
+              strong emphasis is placed on understanding how traffic flows, how services are exposed
+              cleanly, and how isolation and security are considered even in a home setup.
+            </p>
+
+            <div class="project-detail-meta">
+              <div class="meta-block">
+                <span class="meta-label">Role</span>
+                <span class="meta-value">Design, implementation, documentation, technical walkthrough</span>
+              </div>
+
+              <div class="meta-block">
+                <span class="meta-label">Type</span>
+                <span class="meta-value">Infrastructure / networking / homelab project</span>
+              </div>
+
+              <div class="meta-block">
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">Network design, VLANs, Docker, Nginx, AdGuard</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="blog-project-lower">
+          <section class="project-lower-panel">
+            <h2 class="panel-title">Key implementation points</h2>
+            <ul class="project-detail-list">
+              <li>Designed a segmented network using VLANs to separate user, IoT, and infrastructure traffic</li>
+              <li>Built a modular homelab environment using second-hand hardware</li>
+              <li>Deployed multiple self-hosted services using Docker</li>
+              <li>Implemented reverse proxying to expose services cleanly via domain names instead of raw IPs</li>
+              <li>Configured internal DNS for human-readable service access across the lab</li>
+              <li>Structured service access with security, isolation, and practical maintainability in mind</li>
+            </ul>
+          </section>
+
+          <section class="project-lower-panel">
+            <h2 class="panel-title">Lessons learned</h2>
+            <p>
+              This project reinforced the importance of viewing infrastructure as a complete system
+              rather than isolated components. Instead of focusing purely on tools, it strengthened my
+              understanding of how network design affects service accessibility and security, how DNS
+              and reverse proxying work together to create cleaner environments, and how layering the
+              physical, network, and application stack leads to better clarity and scalability. It also
+              showed that a homelab does not need to be perfect or over-engineered to be valuable—a
+              practical, well-thought-out environment can still reflect real-world infrastructure
+              patterns.
+            </p>
+          </section>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 JonosTechLab</p>
+      <a href="../projects.html">Back to projects</a>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

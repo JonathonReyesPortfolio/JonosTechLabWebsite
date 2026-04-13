@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JonosTechLab</title>
+  <meta
+    name="description"
+    content="Personal portfolio for Jonathon - cloud, security, infrastructure, and homelab projects."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css"/>
+</head>
+    
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand">JonosTechLab</a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav">
+        <a href="About.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="#contact">Say Hi</a>
+        <a href="Media/RESUME.docx" class="resume-link">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Hello — welcome to my corner of the internet</p>
+          <h1>Jonathon</h1>
+          <p class="hero-subtitle">
+            Security-minded infrastructure builder, homelab enthusiast, and hands-on IT operator.
+          </p>
+
+          <p class="hero-text">
+            I build practical systems across AWS, Linux, networking, and self-hosted infrastructure.
+            My focus is turning curiosity into working projects — from static cloud hosting to
+            portfolio labs, monitoring, and security-flavoured documentation.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#specialties">My Skillset</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-card">
+            <div class="portrait-placeholder">
+              <img src="Media/photo-of-me-1.jpeg" alt="Photo of me">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container narrow">
+        <p class="section-label">About</p>
+        <h2>Building real-world skills through hands-on infrastructure</h2>
+        <p>
+          I’m documenting my journey across cloud, security, networking, and homelab engineering.
+          My background blends support experience with self-driven project work, and I like showing
+          not just what I built, but why I built it that way.
+        </p>
+        <p>
+          This site is where I collect practical work, project breakdowns, videos, and notes that
+          reflect how I think through systems end to end.
+        </p>
+      </div>
+    </section>
+
+    <section class="specialties section" id="specialties">
+      <div class="container">
+        <p class="section-label">I specialise in</p>
+        <h2>Technical areas I’m actively building in</h2>
+
+        <div class="cards-grid">
+          <article class="info-card">
+            <div class="card-icon">☁️</div>
+            <h3>Cloud Foundations</h3>
+            <p>
+              AWS static hosting, CloudFront, ACM, DNS flow, and secure public-facing delivery.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon">🔐</div>
+            <h3>Security Thinking</h3>
+            <p>
+              Secure architecture decisions, visibility, layered access, and portfolio labs with a defensive mindset.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon">🖧</div>
+            <h3>Networking</h3>
+            <p>
+              VLANs, routing, segmentation, VPN access, DNS resolution, and service exposure done with intent.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon">🖥️</div>
+            <h3>Self-Hosted Systems</h3>
+            <p>
+              Docker, Linux services, internal tooling, homelab platforms, and documentation-first implementation.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+<section class="certifications section" id="certifications">
+  <div class="container">
+
+    <p class="section-label">Certifications</p>
+    <h2>Professional certifications and formal training</h2>
+
+    <div class="about-cred-grid">
+
+      <article class="cred-card">
+        <div data-iframe-width="150" data-iframe-height="270"
+        data-share-badge-id="29850e6c-8b3c-4f84-9cf5-069277f59afa"
+        data-share-badge-host="https://www.credly.com"></div>
+
+        <span class="cred-label">Certification</span>
+        <h3>SOC Level 1</h3>
+        <p>Hands-on SOC training focused on blue team analysis and practical investigation workflows.</p>
+      </article>
+
+      <article class="cred-card">
+        <div data-iframe-width="150" data-iframe-height="270"
+        data-share-badge-id="9f2ca85e-a2d4-41b4-8fdb-b90c5024c123"
+        data-share-badge-host="https://www.credly.com"></div>
+
+        <span class="cred-label">Certification</span>
+        <h3>CCNA</h3>
+        <p>Networking foundations across routing, switching, troubleshooting, and infrastructure logic.</p>
+      </article>
+
+      <article class="cred-card">
+        <a href="https://www.myequals.net/sharelink/cd40c985-79ee-41b7-900c-975db4b5efea/37fe54b9-e3ec-4ae2-b38a-3ca66aa17fdd"
+        target="_blank" rel="noopener noreferrer">
+
+          <img src="Media/swinburne-networking-cert.png"
+          alt="Certificate IV in Networking - Swinburne"
+          class="cred-badge">
+        </a>
+
+        <span class="cred-label">Certification</span>
+        <h3>Certificate IV in Networking</h3>
+        <p>
+          Formal networking studies covering core infrastructure,
+          troubleshooting, and foundational networking concepts.
+        </p>
+      </article>
+
+      <article class="cred-card">
+        <a href="https://coursera.org/share/5a12fb6c5381215339fe320adbb913d0"
+        target="_blank" rel="noopener noreferrer">
+
+          <img src="Media/coursera-google-cybersecurity.png"
+          alt="Google Cybersecurity Certificate"
+          class="cred-badge">
+        </a>
+
+        <span class="cred-label">Certification</span>
+        <h3>Google Cybersecurity Professional Certificate</h3>
+
+        <p>
+          Completed Google's cybersecurity program covering SIEM investigation,
+          incident response, Linux fundamentals, network security,
+          and Python automation concepts.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+    <section class="projects section" id="projects">
+      <div class="container">
+        <p class="section-label">Selected work</p>
+        <h2>Projects and build logs</h2>
+
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-meta">AWS • Static Hosting</div>
+            <h3>Portfolio Website on S3 + CloudFront + ACM</h3>
+            <p>
+              A static portfolio site delivered through CloudFront with TLS, DNS integration, and
+              a private-origin mindset.
+            </p>
+            <a href="/Projects/Portfolio%20Website%20on%20S3.html">View full project</a>
+          </article>
+
+          <article class="project-card project-summary-card">
+    <div class="project-meta">Security • Wazuh • Detection Engineering</div>
+    <h3>Wazuh SIEM Lab with Custom Detection Rules</h3>
+    <p>
+      A self-hosted SIEM project focused on monitoring SSH access, sudo activity,
+      and account-management events through layered custom rules and practical log analysis.
+    </p>
+    <a href="/Projects/WazuhSiemLab.html">View full project</a>
+  </article>
+          
+  
+  <article class="project-card project-summary-card">
+    <div class="project-meta">Infrastructure • Networking • Homelab</div>
+    <h3>Homelab Infrastructure Overview</h3>
+    <p>
+      A full-stack homelab project covering physical setup, VLAN-based network design,
+      Docker services, reverse proxying, and internal DNS — focused on how all layers
+      connect to form a cohesive, real-world system.
+    </p>
+    <a href="/Projects/homelab-project.html">View full project</a>
+  </article>
+          
+<!--
+          <article class="project-card">
+            <div class="project-meta">Security • Documentation</div>
+            <h3>SOC / Security Learning Journey</h3>
+            <p>
+              Detection practice, notes, walkthroughs, and structured write-ups showing technical growth over time.
+            </p>
+            <a href="#">Read project</a>
+
+          </article>
+-->
+        </div>
+      </div>
+    </section>
+
+    <section class="clients section">
+      <div class="container">
+        <p class="section-label">Experience snapshot</p>
+        <h2>Tools and domains I’ve worked across</h2>
+
+        <div class="logo-grid">
+          <div class="logo-pill">AWS</div>
+          <div class="logo-pill">Linux</div>
+          <div class="logo-pill">Docker</div>
+          <div class="logo-pill">Cloudflare</div>
+          <div class="logo-pill">Networking</div>
+          <div class="logo-pill">Security</div>
+          <div class="logo-pill">Homelab</div>
+          <div class="logo-pill">Documentation</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section">
+      <div class="container">
+        <p class="section-label">Interesting stats</p>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-number">04</span>
+            <p>Core technical domains actively developed</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">10+</span>
+            <p>Hands-on infrastructure and lab projects</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">24/7</span>
+            <p>Curiosity running in the background</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">01</span>
+            <p>Big mission: turn learning into real capability</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">Say Hi</p>
+          <h2>Let’s connect</h2>
+          <p>
+            Whether it’s cloud, infrastructure, security, or just seeing what I’m building — feel
+            free to reach out.
+          </p>
+
+          <div class="contact-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="">Email</a>
+          </div>
+        </div>
+
+        <form 
+  class="contact-form" 
+  id="contactForm"
+  action="https://formspree.io/f/mgonqvoz"
+  method="POST"
+>
+          <label>
+            First Name
+            <input type="text" name="firstName" placeholder="Jonathon" required />
+          </label>
+
+          <label>
+            Last Name
+            <input type="text" name="lastName" placeholder="Surname" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 JonosTechLab</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
