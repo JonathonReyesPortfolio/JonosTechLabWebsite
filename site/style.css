@@ -815,3 +815,10 @@ p {
   }
 }
 
+/** underline link thm-projects page **/ 
+
+.THMLINK {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
