@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Production Studio Infrastructure | JonosTechLab</title>
+        <meta
+            name="description"
+            content="Summary of a small production studio infrastructure project built under real-world constraints." />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body>
+        <header class="site-header" id="top">
+            <div class="container nav-wrap">
+                <a href="../index.html" class="brand">JonosTechLab</a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="site-nav">
+                    <a href="/About.html">About</a>
+                    <a href="/projects.html">Projects</a>
+                    <a href="/index.html#contact">Say Hi</a>
+                    <a href="https://drd8wv1lhx9pb.cloudfront.net/Media/Static/JreyesResume.docx" class="resume-link">
+                        Resume
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="section project-detail-shell">
+                <div class="container">
+                    <article class="blog-project-frame">
+                        <div class="blog-project-toolbar">
+                            <div class="blog-project-toolbar-inner">
+                                <span class="toolbar-chip">Docker</span>
+                                <span class="toolbar-chip">Synology</span>
+                                <span class="toolbar-chip">VPN</span>
+                                <span class="toolbar-chip">Internal Infrastructure</span>
+                            </div>
+                        </div>
+
+                        <div class="blog-project-header">
+                            <p class="section-label">Project Summary</p>
+                            <h1 class="blog-project-title">Production Studio Infrastructure</h1>
+                            <p class="blog-project-subtitle">
+                                A small-business internal infrastructure project designed to centralise services,
+                                improve internal access, and introduce more structured IT foundations in a growing
+                                production environment.
+                            </p>
+
+                            <div class="project-links">
+                                <a
+                                    href="https://github.com/JonathonReyesPortfolio/production-studio-it-infrastructure"
+                                    class="project-link-btn"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="blog-project-main blog-project-main--no-video">
+                            <section class="blog-project-text-card">
+                                <h2 class="panel-title">Overview</h2>
+
+                                <p>
+                                    This project documents the design of a lightweight internal service environment for
+                                    a film and production company using existing hardware and a limited budget.
+                                </p>
+
+                                <p>
+                                    The goal was to move away from fragmented workflows by introducing a centralised,
+                                    self-hosted stack for internal tools, documentation, file access, and password
+                                    management.
+                                </p>
+
+                                <p>
+                                    Services were kept internally accessible through local networking and VPN-based
+                                    remote access, with a simple landing page to make the environment easier for
+                                    non-technical users to navigate.
+                                </p>
+
+                                <div class="project-detail-meta">
+                                    <div class="meta-block">
+                                        <span class="meta-label">Role</span>
+                                        <span class="meta-value">
+                                            Design, deployment, networking, service integration
+                                        </span>
+                                    </div>
+
+                                    <div class="meta-block">
+                                        <span class="meta-label">Type</span>
+                                        <span class="meta-value">Small business infrastructure project</span>
+                                    </div>
+
+                                    <div class="meta-block">
+                                        <span class="meta-label">Focus</span>
+                                        <span class="meta-value">Docker, Synology, VPN access, internal services</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="blog-project-lower">
+                            <section class="project-lower-panel">
+                                <h2 class="panel-title">Key implementation points</h2>
+                                <ul class="project-detail-list">
+                                    <li>Built around a Docker-based application stack</li>
+                                    <li>Centralised access to internal tools through a landing page</li>
+                                    <li>
+                                        Deployed services such as Vaultwarden, Wiki.js, BookStack, Nextcloud, and
+                                        Excalidraw
+                                    </li>
+                                    <li>Restricted access through LAN and VPN-based connectivity</li>
+                                    <li>Used reverse proxying and internal DNS to improve usability</li>
+                                    <li>
+                                        Designed with practical constraints, existing hardware, and business usability
+                                        in mind
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section class="project-lower-panel">
+                                <h2 class="panel-title">Outcome</h2>
+                                <p>
+                                    The project served as a practical foundation for introducing structure, internal
+                                    service availability, and more deliberate IT design into a fast-moving creative
+                                    business. It also reflects how I approached infrastructure with both usability and
+                                    security in mind, rather than treating it as a purely technical exercise.
+                                </p>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-wrap">
+                <p>© 2026 JonosTechLab</p>
+                <a href="../projects.html">Back to projects</a>
+            </div>
+        </footer>
+
+        <script src="../script.js"></script>
+    </body>
+</html>

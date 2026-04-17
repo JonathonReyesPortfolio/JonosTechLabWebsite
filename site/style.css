@@ -817,8 +817,46 @@ p {
 
 /** underline link thm-projects page **/ 
 
-.THMLINK {
+.HYPERLINK {
   text-decoration: underline;
   color: blue;
   cursor: pointer;
+}
+
+/* Project Template - No Video Variant */
+
+.blog-project-main--no-video {
+  grid-template-columns: 1fr;
+}
+
+.blog-project-main--no-video .blog-project-text-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+.blog-project-main--no-video .blog-project-text-card p {
+  max-width: none;
+}
+
+/* Optional GitHub button styling */
+.project-links {
+  margin-top: 1rem;
+}
+
+.project-link-btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  font-weight: 600;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.project-link-btn:hover {
+  transform: translateY(-1px);
+  background: var(--surface-2);
 }
